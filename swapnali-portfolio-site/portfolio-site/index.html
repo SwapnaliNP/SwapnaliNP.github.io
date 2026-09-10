@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$ ./swapnali_patki</title>
+<meta name="description" content="Swapnali Patki — Machine Learning Engineer / Data Scientist in Seattle, WA. LLM, computer vision, and applied ML systems.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="titlebar">
+  <div class="titlebar-inner">
+    <span class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></span>
+    <span class="titlebar-path"><span class="user">swapnali</span><span class="sep">@</span>portfolio<span class="sep">:</span>~$</span>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">[ menu ]</button>
+    <nav class="nav" id="site-nav">
+      <a class="navlink" href="#top">home</a>
+      <a class="navlink" href="#projects">projects</a>
+      <a class="navlink" href="#experience">experience</a>
+      <a class="navlink" href="#skills">skills</a>
+      <a class="navlink" href="#contact">contact</a>
+      <a class="navlink resume" href="assets/Swapnali_Patki_Resume.pdf" target="_blank" rel="noopener">résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="cmd-line"><span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">whoami</span></div>
+
+    <h1 class="hero-name">Swapnali Patki</h1>
+    <div class="hero-role" data-typed-roles='["Machine Learning Engineer", "Computer Vision Engineer", "GenAI / RAG Systems", "Data Scientist"]'></div>
+
+    <div class="hero-meta">
+      <span><span class="sigil">loc:</span> Seattle, WA</span>
+      <span><span class="sigil">exp:</span> ~5 yrs · ML / data engineering</span>
+      <span><span class="sigil">focus:</span> LLMs · computer vision · applied statistics</span>
+    </div>
+
+    <div class="hero-links">
+      <a class="btn" href="mailto:snpatki1@gmail.com">email</a>
+      <a class="btn" href="https://github.com/SwapnaliNP" target="_blank" rel="noopener">github ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/swapnali-patki-05b220154/" target="_blank" rel="noopener">linkedin ↗</a>
+      <a class="btn primary" href="assets/Swapnali_Patki_Resume.pdf" target="_blank" rel="noopener">download résumé</a>
+    </div>
+
+    <div class="cmd-line" style="margin-top:48px;">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">cat</span><span class="comment">about.md</span>
+    </div>
+    <div class="about-text">
+      <p>I build and ship machine learning systems end to end — from fine-tuning and RAG pipelines to computer vision models running in production. Most recently I've been operationalizing enterprise-grade LLM and CV systems, applying causal inference and econometrics-informed statistics, and turning that work into revenue and business impact through responsible AI.</p>
+      <p>Before that: cascading-failure research on the power grid, backend systems handling six-figure user bases, and a few too many Kaggle competitions. Currently finishing an MBA focused on applying AI in business.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="cmd-line">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">ls</span><span class="comment">projects/ -l</span>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">ETF Portfolio Optimizer</span>
+          <span class="card-kind">independent</span>
+        </div>
+        <p class="card-desc">Fine-tuned FinGPT with LoRA adapters over 500 ETF funds and macroeconomic data, served through a RAG pipeline for real-time recommendations. A 5–15 minute CI/CD price-monitoring loop on TimescaleDB and yfinance drives dynamic rebalancing decisions.</p>
+        <div class="tags"><span class="tag">LoRA</span><span class="tag">RAG</span><span class="tag">TimescaleDB</span><span class="tag">yfinance</span><span class="tag">CI/CD</span></div>
+        <span class="card-link disabled">case study — code private</span>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">Store Sales Forecasting</span>
+          <span class="card-kind">kaggle</span>
+        </div>
+        <p class="card-desc">Ensembled ARIMA, XGBoost-boosted linear regression, and blended random forest models to forecast retail sales, then shipped the winning pipeline with MLflow to Azure Kubernetes Service. Placed 128th on the competition leaderboard.</p>
+        <div class="tags"><span class="tag">ARIMA</span><span class="tag">XGBoost</span><span class="tag">MLflow</span><span class="tag">AKS</span></div>
+        <span class="card-link disabled">repo not public</span>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">Yahoo Music Recommender</span>
+          <span class="card-kind">kaggle · 2nd place</span>
+        </div>
+        <p class="card-desc">Built a recommendation pipeline in PySpark over a large, hierarchical listening dataset, testing ~20 statistical and ensemble methods before landing on the final model. Scored 0.891 and placed 2nd in the class Kaggle competition.</p>
+        <div class="tags"><span class="tag">PySpark</span><span class="tag">Ensemble Learning</span><span class="tag">ROC / RMSE</span></div>
+        <a class="card-link" href="https://github.com/SwapnaliNP/Yahoo-Music-Recommender" target="_blank" rel="noopener">→ github.com/Yahoo-Music-Recommender</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">Smart Queue Management</span>
+          <span class="card-kind">published</span>
+        </div>
+        <p class="card-desc">Real-time crowd-tracking system pairing a CNN for human detection with a DNN for predictive queue analysis, built on OpenCV for filtering, gray-scaling, and edge detection. Published in JETIR (Vol. 7, Issue 5, 2020).</p>
+        <div class="tags"><span class="tag">CNN</span><span class="tag">DNN</span><span class="tag">OpenCV</span><span class="tag">IoT</span></div>
+        <span class="card-link disabled">JETIR · ISSN 2349-5162</span>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">Airline Web Booking App</span>
+          <span class="card-kind">full-stack</span>
+        </div>
+        <p class="card-desc">End-to-end airline booking application with an Angular front end, a .NET (C#) service layer, and a MySQL-backed data pipeline handling reservations and lookups.</p>
+        <div class="tags"><span class="tag">Angular</span><span class="tag">.NET / C#</span><span class="tag">MySQL</span></div>
+        <a class="card-link" href="https://github.com/SwapnaliNP/Airline-Web-Application" target="_blank" rel="noopener">→ github.com/Airline-Web-Application</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-title">Social-Aware Robot Motion Planning</span>
+          <span class="card-kind">robotics</span>
+        </div>
+        <p class="card-desc">Simulated a Pioneer 3 robot navigating human environments using ROS, Gmapping, move_base, and a TEB planner tuned for socially-aware trajectories around dynamic obstacles.</p>
+        <div class="tags"><span class="tag">ROS</span><span class="tag">move_base</span><span class="tag">Python / C++</span></div>
+        <span class="card-link disabled">repo not public</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="cmd-line">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">cat</span><span class="comment">experience.log</span>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span><span class="exp-role">Data Scientist / Machine Learning Engineer</span> · <span class="exp-org">Western EcoSystems Technology Inc.</span></span>
+        <span class="exp-date">Jan 2023 — Jan 2026</span>
+      </div>
+      <div class="exp-loc">Seattle, WA</div>
+      <ul class="exp-bullets">
+        <li>Generated $250k+ in new revenue and secured 4 enterprise clients by partnering with senior leadership on AI roadmaps.</li>
+        <li>Engineered and productionized 10+ multi-modal computer vision systems (classification, detection, segmentation, tracking) in Azure ML, improving F1 score by 20–25%.</li>
+        <li>Fine-tuned and deployed an end-to-end GenAI RAG pipeline (Python, Pinecone, GitLab CI/CD) that turned lengthy technical RFPs into concise summaries, eliminating 400+ hours of manual analysis.</li>
+        <li>Built a synthetic data pipeline with Stable Diffusion to simulate rare wildlife classes, boosting minority-class F1 by 20% while reducing model drift and bias.</li>
+        <li>Reduced manual field survey time by 60% with a computer vision carcass-detection model processing GIS data alongside field, GIS, and drone teams.</li>
+        <li>Optimized CLIP-based transformer inference for semantic segmentation, accelerating deployment speed 2x.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span><span class="exp-role">Machine Learning Researcher</span> · <span class="exp-org">Stevens Institute of Technology, AISec Lab</span></span>
+        <span class="exp-date">Jun 2022 — Dec 2022</span>
+      </div>
+      <div class="exp-loc">Hoboken, NJ</div>
+      <ul class="exp-bullets">
+        <li>Raised suicide-risk sentiment detection F1 from 0.78 to 0.85 across 1M+ social media posts with an end-to-end Apache Flink pipeline and ensembled forecasting models.</li>
+        <li>Quantified cascading failure patterns across 10,779 transmission outages and 6,687 cascading events using NetworkX and spatial propagation analysis, presenting findings at a university research symposium.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span><span class="exp-role">Software Engineer</span> · <span class="exp-org">L&amp;T Technology Services</span></span>
+        <span class="exp-date">Jan 2021 — Aug 2021</span>
+      </div>
+      <div class="exp-loc">Mumbai, India</div>
+      <ul class="exp-bullets">
+        <li>Supported 100K+ active users under high-throughput production workloads by engineering backend systems in Java and optimizing API and SQL performance.</li>
+        <li>Improved site load time by 30% by designing a MySQL schema and building full-stack features in .NET, Angular, and React.</li>
+        <li>Cut incident resolution time 40% by automating production monitoring in Splunk and JIRA.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span><span class="exp-role">Software Development Engineer</span> · <span class="exp-org">Persistent Systems Ltd.</span></span>
+        <span class="exp-date">Jun 2019 — Dec 2019</span>
+      </div>
+      <div class="exp-loc">Pune, India</div>
+      <ul class="exp-bullets">
+        <li>Prevented recurring reporting discrepancies of up to $25,000 per batch by resolving a data mismatch between PostgreSQL and Power BI dashboards.</li>
+        <li>Built backend microservices and REST APIs for a search engine using Node.js, TypeScript, C#, and MySQL, improving query response time by 20%.</li>
+        <li>Built an Angular/PHP web app with a questionnaire front end for ML experts, plus a monitoring framework for a US-based insurance client.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="cmd-line">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">tree</span><span class="comment">education/</span>
+    </div>
+    <pre class="tree">.
+<span class="branch">├──</span> <span class="degree">Master of Business Administration</span>, Applied AI in Business
+<span class="branch">│</span>   <span class="school">Westcliff University</span>, Irvine, CA · <span class="gpa">GPA 4.0</span> · Jan 2026 – present
+<span class="branch">├──</span> <span class="degree">Master of Science</span>, Applied Artificial Intelligence
+<span class="branch">│</span>   <span class="school">Stevens Institute of Technology</span>, Hoboken, NJ · <span class="gpa">GPA 3.9</span> · Aug 2021 – Dec 2022
+<span class="branch">└──</span> <span class="degree">Bachelor of Engineering</span>, Information Technology
+    <span class="school">Savitribai Phule Pune University</span>, India · <span class="gpa">GPA 7.8</span> · Aug 2016 – May 2020</pre>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="cmd-line">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">pip</span><span class="comment">list --skills</span>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label"><span class="path">~/languages</span></div>
+      <div class="pill-row">
+        <span class="pill">Python</span><span class="pill">R</span><span class="pill">SQL</span><span class="pill">Scala</span>
+        <span class="pill">C++</span><span class="pill">C#</span><span class="pill">Java</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label"><span class="path">~/ml-and-ai</span></div>
+      <div class="pill-row">
+        <span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">Hugging Face Transformers</span>
+        <span class="pill">RAG</span><span class="pill">LangChain</span><span class="pill">Llama</span><span class="pill">CLIP</span>
+        <span class="pill">YOLO</span><span class="pill">SAM</span><span class="pill">Vector Embeddings</span>
+        <span class="pill">Bayesian Methods</span><span class="pill">Time Series / ARIMA</span><span class="pill">A/B Testing</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label"><span class="path">~/data-and-infra</span></div>
+      <div class="pill-row">
+        <span class="pill">Apache Spark</span><span class="pill">Kafka</span><span class="pill">Hadoop</span><span class="pill">Snowflake</span>
+        <span class="pill">Voxel51</span><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">MLflow</span>
+        <span class="pill">Kubeflow</span><span class="pill">Jenkins</span><span class="pill">GitLab CI/CD</span><span class="pill">CircleCI</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label"><span class="path">~/cloud-and-viz</span></div>
+      <div class="pill-row">
+        <span class="pill">AWS (SageMaker, EKS, Lambda, S3, EC2)</span><span class="pill">GCP (Vertex AI, BigQuery)</span>
+        <span class="pill">Azure ML</span><span class="pill">Tableau</span><span class="pill">Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="cmd-line">
+      <span class="prompt"><span class="arrow">➜</span> ~</span><span class="cmd">./contact.sh</span>
+    </div>
+    <p class="output-line" style="margin-top:-10px; margin-bottom:20px; color:var(--text-dim); font-size:13.5px;">
+      <span class="output-ok">✓</span> connecting... open to Machine Learning Engineer / Data Scientist roles.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="k">email</span>
+        <span class="v"><a href="mailto:snpatki1@gmail.com">snpatki1@gmail.com</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="k">location</span>
+        <span class="v">Seattle, WA</span>
+      </div>
+      <div class="contact-item">
+        <span class="k">github</span>
+        <span class="v"><a href="https://github.com/SwapnaliNP" target="_blank" rel="noopener">github.com/SwapnaliNP</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="k">linkedin</span>
+        <span class="v"><a href="https://www.linkedin.com/in/swapnali-patki-05b220154/" target="_blank" rel="noopener">in/swapnali-patki</a></span>
+      </div>
+    </div>
+
+    <div class="hero-links" style="margin-top:22px;">
+      <a class="btn primary" href="assets/Swapnali_Patki_Resume.pdf" target="_blank" rel="noopener">download résumé (pdf)</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  © Swapnali Patki, 2026 — built with HTML/CSS/JS, hosted on GitHub Pages<span class="blink-cursor"></span>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
